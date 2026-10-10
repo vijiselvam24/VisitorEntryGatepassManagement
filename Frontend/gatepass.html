@@ -1,38 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Gate Pass</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
+<input type="number" id="visitId" placeholder="Visit ID" required>
 
-    <div class="form-box">
-        <h2>Gate Pass</h2>
+<input type="datetime-local" id="issuedAt" required>
 
-        <input type="text" placeholder="Visit ID">
+<select id="passStatus" required>
+    <option value="">Select Status</option>
+    <option value="Active">Active</option>
+    <option value="Completed">Completed</option>
+    <option value="Cancelled">Cancelled</option>
+</select>
 
-        <input type="datetime-local">
+<button onclick="generatePass()">Generate Gate Pass</button>
+<button onclick="location.href='dashboard.html'">Back</button>
+<p id="passMessage"></p>
+<button id="printButton" onclick="window.print()" style="display:none;">
+    Print Gate Pass
+</button>
 
-        <select>
-            <option>Select Status</option>
-            <option>Active</option>
-            <option>Completed</option>
-            <option>Cancelled</option>
-        </select>
+<script src="script.js"></script>
 
-        <button onclick="generatePass()">
-            Generate Gate Pass
-        </button>
 
-        <button onclick="location.href='dashboard.html'">
-            Back
-        </button>
-
-        <p id="passMessage"></p>
-    </div>
-
-    <script src="script.js"></script>
-
-</body>
-</html>

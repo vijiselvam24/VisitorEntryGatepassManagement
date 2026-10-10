@@ -4,25 +4,24 @@
     <title>Visitor Registration</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <div class="form-box">
         <h2>Visitor Registration</h2>
 
-        <input type="text" placeholder="Visitor Name">
-        <input type="text" placeholder="Phone">
-        <input type="text" placeholder="Address">
-        <input type="text" placeholder="ID Proof">
+        <input type="text" id="visitorName" placeholder="Visitor Name">
+        <input type="text" id="phone" placeholder="Phone">
+        <input type="text" id="address" placeholder="Address">
+        <input type="text" id="idProof" placeholder="ID Proof">
 
         <button onclick="saveVisitor()">Save Visitor</button>
 
         <button onclick="location.href='dashboard.html'">
             Back
         </button>
+
+        <p id="message"></p>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>

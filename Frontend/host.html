@@ -6,24 +6,39 @@
 </head>
 
 <body>
-
     <div class="form-box">
         <h2>Host & Department</h2>
 
-        <input type="text" placeholder="Department Name">
+        <input
+            type="text"
+            id="department"
+            placeholder="Department Name"
+            required
+        >
 
-        <input type="text" placeholder="Host Name">
+        <input
+            type="text"
+            id="hostName"
+            placeholder="Host Name"
+            required
+        >
 
-        <input type="text" placeholder="Host Contact">
+        <input
+            type="tel"
+            id="hostContact"
+            placeholder="Host Contact"
+            required
+        >
 
         <button onclick="saveHost()">Save</button>
 
         <button onclick="location.href='dashboard.html'">
             Back
         </button>
+
+        <p id="message"></p>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>

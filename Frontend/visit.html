@@ -1,35 +1,29 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Visit Details</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <div class="form-box">
         <h2>Visit Details</h2>
 
-        <input type="text" placeholder="Visitor ID">
-
-        <input type="text" placeholder="Host ID">
-
-        <input type="date">
-
-        <input type="text" placeholder="Purpose">
-
-        <input type="datetime-local" placeholder="Entry Time">
-
-        <input type="datetime-local" placeholder="Exit Time">
+        <input type="number" id="visitorId" placeholder="Visitor ID">
+        <input type="number" id="hostId" placeholder="Host ID">
+        <input type="date" id="visitDate">
+        <input type="text" id="purpose" placeholder="Purpose">
+        <label>Entry Time</label>
+        <input type="datetime-local" id="entryTime">
+        <label>Exit Time</label>
+        <input type="datetime-local" id="exitTime">
 
         <button onclick="saveVisit()">Save Visit</button>
+        <button onclick="location.href='dashboard.html'">Back</button>
 
-        <button onclick="location.href='dashboard.html'">
-            Back
-        </button>
+        <p id="message"></p>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>

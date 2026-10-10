@@ -6,7 +6,7 @@ public class DatabaseConnection {
     public static Connection getConnection() {
 
         try {
-            String url = "jdbc:mysql://localhost:3306/?useSSL=false&allowPublicKeyRetrieval=true";
+            String url = "jdbc:mysql://localhost:3306/gatpass?useSSL=false&allowPublicKeyRetrieval=true";
             String username = "root";
             String password = "viji@selvam24";
 
